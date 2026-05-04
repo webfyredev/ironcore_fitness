@@ -1,0 +1,10 @@
+@import "tailwindcss";
+body {
+    overflow-x:  hidden;
+  font-family: var(--font-body);
+
+}
+
+.heading {
+  font-family: var(--font-heading);
+}
