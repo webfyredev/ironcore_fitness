@@ -1,5 +1,5 @@
 
-import { FaDumbbell, FaUserTie, FaUsers, FaWeight, FaBolt, FaAppleAlt, FaRunning, FaSeedling, FaFileContract, FaShieldAlt, FaPauseCircle } from "react-icons/fa";
+import { FaDumbbell, FaClipboardCheck, FaUserTie, FaUsers, FaWeight, FaBolt, FaAppleAlt, FaRunning, FaSeedling, FaFileContract, FaShieldAlt, FaPauseCircle, FaStar, FaCertificate, FaTrophy } from "react-icons/fa";
 export const programs = [
     {
         icon : FaDumbbell,
@@ -226,4 +226,41 @@ export const testimonials = [
 
     
 
+];
+
+export const foot_data = [
+    {
+        icon : FaShieldAlt,
+        title : '7-Day Money-Back Guarantee',
+        text : 'Risk-free trial period'
+    },
+    {
+        icon : FaFileContract,
+        title : 'No Long-Term Contracts',
+        text : 'Month-to-month flexibility'
+    },
+    {
+        icon : FaClipboardCheck,
+        title : 'Free Fitness Assessment',
+        text : 'Personalized starting point'
+    }
+];
+
+export const foot_stats = [
+    {
+        icon : FaStar,
+        title : '5-Star Rated'
+    },
+    {
+        icon : FaUsers,
+        title : '2000+ Active Members'
+    },
+    {
+        icon : FaTrophy,
+        title : '10K Success Stories'
+    },
+    {
+        icon : FaCertificate,
+        title : 'Certified Trainers'
+    }
 ]
