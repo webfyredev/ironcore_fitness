@@ -86,24 +86,24 @@ export default function Home() {
       <Navbar />
       <div className="w-full relative h-[100vh] flex items-center justify-center">
           <img src="/hero2.jpg" alt="" className="w-full h-full object-cover" />
-          <div className="w-full h-full absolute inset-o bg-black/70 top-0 left-0 flex flex-col items-center justify-center">
+          <div className="w-full h-full absolute inset-0 bg-black/70 top-0 left-0 flex flex-col items-center justify-center">
             <motion.div 
               {...scrollDownEffects}
-              className="w-auto flex space-x-5 p-2 mt-25">
+              className="w-auto flex space-x-5 p-2 mt-10 lg:mt-25">
               {achts.map((data, index) => (
-                <div key={index} className="flex space-x-2 items-center px-4 py-2 rounded-full border-1 bg-[#070A0C] border-[#55FFCB]/20">
+                <div key={index} className="flex space-x-2 items-center px-2 md:px-4 py-2 rounded-full border-1 bg-[#070A0C] border-[#55FFCB]/20">
                     <data.icon  className="text-[#55FFCB]"/>
-                    <p className="font-medium text-white text-[10px]">{data.text}</p>
+                    <p className="font-medium text-white text-[7px] md:text-[10px]">{data.text}</p>
                 </div>
               ))}
 
             </motion.div>
             <motion.h3 
               {...scrollRightEffects}
-              className="heading w-[50%] mt-10 text-center text-white text-[55px] font-bold leading-tight">TRANSFORM YOUR BODY. <br /> <span className="text-[#55FFCB]">UNLOCK YOUR STRENGTH.</span></motion.h3>
+              className="heading w-[90%] md:w-[65%] lg:w-[50%] mt-5 lg:mt-10 text-center text-white text-[30px] md:text-[45px] lg:text-[55px] font-bold leading-tight">TRANSFORM YOUR BODY. <br /> <span className="text-[#55FFCB]">UNLOCK YOUR STRENGTH.</span></motion.h3>
             <motion.p 
               {...scrollUpDelayEffects}
-              className="w-[55%] mt-8 text-center text-white/90">Elite training programs, certified coaches, and a community built to help you win. Whether you're starting 
+              className="w-[90%] md:w-[65%] lg:w-[55%] mt-5 lg:mt-8 text-center text-white/90 text-sm md:text-base">Elite training programs, certified coaches, and a community built to help you win. Whether you're starting 
               your fitness journey or pushing to the next level, IronCore is where transformation happens.
             </motion.p>
             <motion.div 
@@ -136,14 +136,14 @@ export default function Home() {
             </motion.div>
           </div>
       </div>
-      <div className="w-full px-10 py-20 bg-[#242424] flex space-x-10">
-          <div className="w-1/2 p-5 flex items-center justify-center mt-5 relative overflow-hidden">
+      <div className="w-full px-3 lg:px-10 py-10 lg:py-20 bg-[#242424] lg:flex lg:flex-row flex flex-col lg:space-x-10">
+          <div className="w-full lg:w-1/2 p-2 lg:p-5 flex items-center justify-center mt-5 relative overflow-hidden">
               <motion.img 
                 {...scrollLeftEffects}
                 src="/hero.jpg" alt="" className="w-full h-[80%] rounded-xl object-cover" />
               <motion.div 
                   {...fadeInEffects}
-                  className="absolute w-[80%] top-[70%] p-5 flex items-center space-x-5">
+                  className="absolute w-[80%] top-[70%] p-5 hidden md:flex items-center space-x-5">
                   <div className="w-1/2 py-2 px-3.5 flex flex-col  border-1 bg-[#070A0C] border-[#55FFCB]/20 rounded-xl">
                     <h3 className="heading text-[#55FFCB] font-bold text-xl">
                       10+
@@ -162,7 +162,7 @@ export default function Home() {
                   </div>
               </motion.div>
           </div>
-          <div className="w-1/2 flex flex-col items-left p-5 justify-center mt-5">
+          <div className="w-full lg:w-1/2 flex flex-col items-left p-2 lg:p-5 justify-center mt-5">
               <motion.p 
                 {...secFadeInEffects}
                 className="text-[12px] font-bold text-[#55FFCB]">ABOUT IRONCORE FITNESS</motion.p>
@@ -215,16 +215,16 @@ export default function Home() {
               </div>
           </div>
       </div>
-      <div className="w-full p-15 flex flex-col items-center bg-[#0A0B0B]">
+      <div className="w-full p-3 lg:p-15 flex flex-col items-center bg-[#0A0B0B]">
           <motion.p 
             {...secFadeInEffects}
-            className="text-[12px] font-bold text-[#55FFCB]">OUR PROGRAMS</motion.p>
+            className="text-[12px] font-bold text-[#55FFCB] mt-10 lg:mt-0">OUR PROGRAMS</motion.p>
           <motion.h3 
             {...scrollUpEffects}
-            className="text-4xl heading leading-tight text-center font-bold mt-3 text-white">PROGRAM DESIGNED<br /> <span className="text-[#55FFCB]">FOR YOUR SUCCESS</span></motion.h3>
+            className="text-3xl md:text-4xl heading leading-tight text-center font-bold mt-3 text-white">PROGRAM DESIGNED<br /> <span className="text-[#55FFCB]">FOR YOUR SUCCESS</span></motion.h3>
           <motion.p 
             {...scrollUpDelayEffects}
-            className="w-[50%] text-center text-[13px] text-white/80 mt-5">
+            className="w-[90%] md:w-[65%] lg:w-[50%] text-center text-[13px] text-white/80 mt-5">
                 Whether you're just starting out or training for competition, we have a program that fits your goals, schedule and fitness level. Every program is backed by science and delivered by certified experts
           </motion.p>
           <motion.div 
@@ -232,7 +232,7 @@ export default function Home() {
             initial="hidden"
             whileInView = "show"
             viewport= {{ once : false}}
-            className="w-full mt-5 p-5 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            className="w-full mt-5 p-2 lg:p-5 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
               {programs.map((data, index) => {
                 const Icon = data.icon;
                 return(
@@ -263,12 +263,12 @@ export default function Home() {
           </motion.div>
           <motion.p 
             {...scrollUpEffects}
-            className="w-[50%] text-center text-[13px] text-white/80 mt-5">
+            className="w-[90%] md:w-[65%] lg:w-[50%] text-center text-[13px] text-white/80 mt-5">
           Not sure which program is right for you? Let our experts help you find the perfect fit.
           </motion.p>
           <motion.div 
             {...scrollRightEffects}
-            className="w-auto flex space-x-5 items-center mt-5">
+            className="w-auto flex space-x-3 md:space-x-5 items-center mt-5">
             <motion.button 
               {...buttonHoverEffects}
               className="cursor-pointer px-6 py-3 bg-[#55FFCB] text-[#0A0A0A] rounded-full font-bold text-[12px] hover:shadow-[0_0_30px_rgba(85,255,203,0.2)]">
@@ -281,16 +281,16 @@ export default function Home() {
             </motion.button>
           </motion.div>
       </div>
-      <div className="w-full p-15 flex flex-col items-center bg-[#242424]">
+      <div className="w-full p-3 lg:p-15 flex flex-col items-center bg-[#242424]">
           <motion.p 
             {...fadeInEffects}
-            className="text-[12px] font-bold text-[#55FFCB]">MEMEBERSHIP PLANS</motion.p>
+            className="text-[12px] font-bold text-[#55FFCB] mt-10 lg:mt-0">MEMEBERSHIP PLANS</motion.p>
           <motion.h3 
             {...scrollUpEffects}
-            className="text-4xl heading leading-tight text-center font-bold mt-3 text-white">FLEXIBLE PLANS.<br /> <span className="text-[#55FFCB]">ZERO COMMITMENT</span></motion.h3>
+            className="text-3xl md:text-4xl heading leading-tight text-center font-bold mt-3 text-white">FLEXIBLE PLANS.<br /> <span className="text-[#55FFCB]">ZERO COMMITMENT</span></motion.h3>
           <motion.p 
               {...scrollUpDelayEffects}
-              className="w-[50%] text-center text-[13px] text-white/80 mt-5">
+              className="w-[92%] md:w-[65%] lg:w-[50%] text-center text-[13px] text-white/80 mt-5">
               Choose the membership that fits that fits your lifestyle and goals. All plans include our 7-day money-back guarantee, no long-term contracts,  and the freedom to upgrade, downgrade, or cancel anytime.
           </motion.p>
             <motion.div
@@ -314,13 +314,13 @@ export default function Home() {
                 )
               })}
           </motion.div>
-          <div className="w-full py-5 mt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-5 space-x-5">
+          <div className="w-full py-5 mt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:space-x-5">
               {price_plans.map((data, index) => {
                 const most_popular = data.type === "Standard";
                 return (
                   <motion.div 
                     {...scrollUpEffects}
-                    key={index} className={`relative p-6 rounded-2xl transition-all duration-300 bg-[#2A2A2A] flex flex-col items-center ${most_popular ? "border-2 border-[#55FFCB] scale-103 shadow-[0_0_30px_rgba(85,255,203,0.2)]" : "border-1 border-[#55FFCB]/20"}`}>
+                    key={index} className={`relative p-6 rounded-2xl transition-all duration-300 bg-[#2A2A2A] flex flex-col items-center mb-5 lg:mb-0 ${most_popular ? "border-2 border-[#55FFCB] lg:scale-103 shadow-[0_0_30px_rgba(85,255,203,0.2)]" : "border-1 border-[#55FFCB]/20"}`}>
                     {most_popular &&(
                       <p className="absolute top-[-12px] text-center left-[30%] px-4 py-1 text-[11px] font-bold rounded-full bg-[#55FFCB]">
                         MOST POPULAR
@@ -353,7 +353,7 @@ export default function Home() {
               {...fadeInEffects}
               className="w-full p-5 flex flex-col items-center space-y-5 bg-[#2A2A2A] border-1 border-[#55FFCB]/20 rounded-xl mt-10">
               <h3 className="heading text-white text-lg font-bold">NOT SURE WHICH PLAN IS RIGHT?</h3>
-              <p className="w-[50%] text-center text-[13px] text-white/80">
+              <p className="w-[95%] md:w-[65%] lg:w-[50%] text-center text-[13px] text-white/80">
                 Schedule a free consultation with our team. We'll discuss your goals, show you around the facility, and help you choose the perfect membership plan.
               </p>
               <motion.div 
@@ -373,17 +373,17 @@ export default function Home() {
 
           </motion.div>
       </div>
-      <div className="w-full p-15 flex flex-col items-center bg-[#0A0B0B]">
+      <div className="w-full p-3 lg:p-15 flex flex-col items-center bg-[#0A0B0B]">
           <motion.p 
             {...ParagraphscaleInEffects}
-            className="text-[12px] font-bold text-[#55FFCB]">OUR EXPERT TEAM
+            className="text-[12px] font-bold text-[#55FFCB] mt-10 lg:mt-0">OUR EXPERT TEAM
           </motion.p>
           <motion.h3 
             {...scrollUpEffects}
-            className="text-4xl heading leading-tight text-center font-bold mt-3 text-white">MEET YOUR <br /> <span className="text-[#55FFCB]">TRANSFORMATION COACHES</span></motion.h3>
+            className="text-3xl md:text-4xl heading leading-tight text-center font-bold mt-3 text-white">MEET YOUR <br /> <span className="text-[#55FFCB]">TRANSFORMATION COACHES</span></motion.h3>
           <motion.p 
             {...scrollUpDelayEffects}
-            className="w-[50%] text-center text-[13px] text-white/80 mt-5">
+            className="w-[90%] md:w-[65%] lg:w-[50%] text-center text-[13px] text-white/80 mt-5">
             Our certified trainers bring decades of combined experiences, advanced certifications, and a genuine passion for helping you achieve your goals. They're not just coaches, they're your partners in transformation.
           </motion.p>
           <motion.div 
@@ -395,7 +395,7 @@ export default function Home() {
               {trainers.map((data, index) => (
                 <motion.div 
                   variants = {staggerEffects}
-                  key={index} className="w-full flex flex-col border-1 border-[#55FFCB]/20 rounded-xl relative overflow-hidden group">
+                  key={index} className="w-full flex flex-col border-1 border-[#55FFCB]/20 rounded-xl relative overflow-hidden group mb-5 lg:mb-0">
                   <img src={data.image} alt="trainer_image" className=" w-full h-48 object-cover rounded-t-xl group-hover:scale-105 transition-all duration-300" />
                   <div className="absolute w-full h-45 inset-0 bg-[#0A0B0B]/25 group-hover:bg-[#0A0B0B]/5"></div>
                   <div className="w-full h-full flex flex-col px-4 py-2 rounded-b-xl bg-[#2A2A2A]">
@@ -406,7 +406,7 @@ export default function Home() {
                     <p className="text-[11px] mt-1 text-white font-medium">{data.speciality}</p>
                     <div className="w-auto grid  mt-3 md:grid-cols-2 gap-2">
                       {data.skill.map((data, index) => (
-                        <p key={index} className="border-1 bg-[#2E5046] border-[#55FFCB]/20 px-5 text-[#55FFCB] text-[10px] py-1 text-center font-semibold rounded-full">{data}</p>
+                        <p key={index} className="border-1 bg-[#2E5046] mb-1 lg:mb-0 border-[#55FFCB]/20 px-5 text-[#55FFCB] text-[10px] py-1.5 lg:py-1 text-center font-semibold rounded-full">{data}</p>
                       ))}
                     </div>
                     <Link href="#" className="mt-8 text-[11px] font-semibold items-center flex text-[#55FFCB]">
@@ -433,8 +433,8 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <h3 className="mt-10 heading font-bold text-white text-2xl">READY TO WORK WITH OUR EXPERT TEAM?</h3>
-          <p className="w-[50%] text-center text-[13px] text-white/80 mt-5">
+          <h3 className="mt-10 heading font-bold text-white text-2xl text-center">READY TO WORK WITH OUR EXPERT TEAM?</h3>
+          <p className="w-[90%] md:w-[65%] lg:w-[50%] text-center text-[13px] text-white/80 mt-5">
           Whether you need one-on-one coaching or prefer group classes, our trainers are here to guide, motivate, and support you every step of the way
           </p>
           <div className="w-auto flex space-x-5 items-center mt-5">
@@ -450,31 +450,31 @@ export default function Home() {
             </motion.button>
           </div>
       </div>
-      <div className="w-full p-15 flex flex-col items-center bg-[#242424]">
+      <div className="w-full p-3 lg:p-15 flex flex-col items-center bg-[#242424]">
           <motion.p 
             {...ParagraphscaleInEffects}
-            className="text-[12px] font-bold text-[#55FFCB]">SUCCESS STORIES</motion.p>
+            className="text-[12px] font-bold text-[#55FFCB] mt-10 lg:mt-0">SUCCESS STORIES</motion.p>
           <motion.h3 
             {...scrollUpEffects}
-            className="text-4xl heading leading-tight text-center font-bold mt-3 text-white">REAL PEOPLE.<br /> <span className="text-[#55FFCB]">REAL RESULTS.</span></motion.h3>
+            className="text-3xl md:text-4xl heading leading-tight text-center font-bold mt-3 text-white">REAL PEOPLE.<br /> <span className="text-[#55FFCB]">REAL RESULTS.</span></motion.h3>
           <motion.p 
             {...scrollUpDelayEffects}
-            className="w-[50%] text-center text-[13px] text-white/80 mt-5">
+            className="w-[90%] md:w-[65%] lg:w-[50%] text-center text-[13px] text-white/80 mt-5">
             Don't just take our word for it. Hear from real IronCore members who transformed their bodies, minds, and lives. These are just few of thousands of success stories we're proud to be part of 
           </motion.p>
-          <div className="p-5 mt-5  w-full border-1  rounded-2xl bg-[#2A2A2A] border-[#55FFCB]/20 ">
-            <div className="relative rounded-2xl p-3 flex flex-col md:flex-row gap-6 items-center transition-all duration-300">
-                <div className="relative w-1/2 h-[350px] rounded-xl">
+          <div className="p-3 lg:p-5 mt-5 w-full border-1  rounded-2xl bg-[#2A2A2A] border-[#55FFCB]/20 ">
+            <div className="relative rounded-2xl p-1 md:p-3 flex flex-col lg:flex-row gap-4 lg:gap-6 items-center transition-all duration-300">
+                <div className="relative w-full lg:w-1/2 h-[250px] md:h-[350px] rounded-xl">
                   <Image  src={item.image} alt={item.name} fill  className="object-cover rounded-xl hover:scale-105 transition-all duration-300"/>
                    <span className="absolute top-4 left-4 bg-[#55FFCB] text-black text-[11px] font-bold px-5 py-1.5 rounded-full">
                     TRANSFORMATION
                   </span>
-                  <span className="absolute bottom-[-10px] left-40 bg-[#55FFCB] text-black text-[11px] font-semibold px-7 py-1.5 rounded-full">
+                  <span className="absolute bottom-[-10px] left-15  md:left-60 lg:left-40 bg-[#55FFCB] text-black text-[10px] md:text-[11px] font-semibold px-7 py-1.5 rounded-full">
                     {item.result}
                   </span>
                   {/* <img src={item.image} alt="testimonial images" className="w-full h-full object-cover" /> */}
                 </div>
-                <div className="w-1/2 p-5 h-full flex flex-col">
+                <div className="w-full lg:w-1/2 p-3 lg:p-5 h-full flex flex-col">
                   <div className="flex gap-1 mb-6 text-[#55FFCB]">
                     {[...Array(5)].map((_, i) => (
                       <FaStar key={i} />
@@ -522,21 +522,21 @@ export default function Home() {
             ))}
           </motion.div>
       </div>
-      <div className="w-full h-auto relative">
-        <img src="/home/foot.jpg" alt="" className="w-full h-full object-cover" />
-        <div className="absolute w-full h-full inset-0 bg-[#0A0B0B]/65 top-0 flex flex-col items-center justify-center">
+      <div className="w-full h-full lg:h-auto relative overflow-hidden">
+        <img src="/home/foot.jpg" alt="" className="w-full h-[65vh] md:h-[55vh] lg:h-full object-cover" />
+        <div className="absolute w-full h-full inset-0 bg-[#0A0B0B]/65 top-0 flex flex-col items-center justify-center overflow-hidden">
             <motion.p 
               {...ParagraphscaleInEffects}
               className="text-[11px] font-semibold bg-[#2E5046] px-4 py-1.5 text-[#55FFCB] border-1 border-[#55FFCB]/20 rounded-full mt-15">LIMITED TIME OFFER</motion.p>
             <motion.h3 
               {...scrollUpEffects}
-              className=" mt-3 w-[60%] heading text-5xl font-bold text-white leading-tight text-center">START YOUR TRANSFORMATION TODAY. <span className="text-[#55FFCB]">YOUR STRONGER SELF IS WAITING.</span></motion.h3>
+              className="mt-3 w-[95%] md:w-[75%] lg:w-[60%] heading text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight text-center">START YOUR TRANSFORMATION TODAY. <span className="text-[#55FFCB]">YOUR STRONGER SELF IS WAITING.</span></motion.h3>
             <motion.p 
               {...scrollUpDelayEffects}
-              className="w-[45%] text-center mt-5 text-white/80">Don't wait another day to become the person you've always wanted to be. Join IronCore Fitness and get access to expert coaching, world-class facilities, and a community that will support you every step of the way.</motion.p>
+              className="hidden md:flex md:w-[85%] lg:w-[45%] text-center mt-5 text-white/80 text-base">Don't wait another day to become the person you've always wanted to be. Join IronCore Fitness and get access to expert coaching, world-class facilities, and a community that will support you every step of the way.</motion.p>
             <motion.div 
               {...scrollUpDelayEffects}
-              className="w-[65%] p-5 mt-5 grid grid-cols-1 md:grid-cols-3 gap-5">
+              className="hidden lg:flex w-[65%] p-5 mt-5 grid grid-cols-1 md:grid-cols-3 gap-5">
               {foot_data.map((data) => (
                 <div className="rounded-xl px-5 py-7 border-1 border-[#55FFCB]/20 flex flex-col items-center bg-[#0A0B0B]/50">
                   <div className="flex w-10 h-10 rounded-full flex items-center justify-center bg-[#2E5046] text-[#55FFCB]">
@@ -549,7 +549,7 @@ export default function Home() {
               ))}
               
             </motion.div>
-            <div className="w-full flex justify-center space-x-5 items-center mt-5">
+            <div className="w-full md:flex md:flex-row flex flex-col justify-center items-center md:space-x-5 space-y-3 md:space-y-0 mt-5">
               <motion.button 
                 {...buttonHoverEffects}
                 className="cursor-pointer px-8 py-3.5 bg-[#55FFCB] text-[#0A0A0A] rounded-full font-bold text-[14px] hover:shadow-[0_0_30px_rgba(85,255,203,0.2)] transition-all duration-300">
@@ -566,11 +566,11 @@ export default function Home() {
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: false }}
-                className="p-5 mt-5 w-[50%] grid grid-cols-2 md:grid-cols-4 gap-1">
+                className="p-5 mt-5 w-[95%] md:w-[80%] lg:w-[50%] grid grid-cols-2 md:grid-cols-4 gap-1">
                 {foot_stats.map((data, index) => (
                   <motion.p 
                     variants={staggerEffects}
-                    className="w-auto flex items-center  text-white font-medium text-[10px]">
+                    className="w-auto flex items-center text-white font-medium text-[10px] mb-3 md:mt-0">
                     <data.icon  className="w-4 h-4 text-[#55FFCB] mr-1"/>
                     {data.title}
                   </motion.p>

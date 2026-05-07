@@ -27,8 +27,8 @@ export default function Footer(){
     ]
     return(
         <>
-            <footer className="w-full py-5 px-5 bg-[#0A0A0A] flex flex-col">
-                <div className="w-full p-5 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <footer className="w-full py-5 lg:px-5 bg-[#0A0A0A] flex flex-col">
+                <div className="w-full lg:p-5 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     <div className="p-5 flex flex-col">
                         <Link href="/">
                             <Image src="/logo.png" alt="ironcore_logo" width={55} height={55} />
@@ -47,8 +47,8 @@ export default function Footer(){
                         <h3 className=" font-semibold text-[#55FFCB]">Quick Links</h3>
                         <ul className="flex flex-col space-y-4 mt-2.5">
                             <li className="text-[12px] text-white/80 hover:text-white hover:font-medium transition-all duration-200">
-                                <Link href="#">
-                                    Home
+                                <Link href="/about">
+                                    About
                                 </Link>
                             </li>
                             <li className="text-[12px] text-white/80 hover:text-white hover:font-medium transition-all duration-200">
@@ -90,8 +90,8 @@ export default function Footer(){
                         </div>
                     </div>
                 </div>
-                <span className="mt-5 w-full  border-1 border-[#55FFCB]/10"></span>
-                <div className="flex items-center justify-between mt-3 px-10">
+                <span className="mt-5 w-full border-1 border-[#55FFCB]/10"></span>
+                <div className="md:flex md:flex-row flex flex-col space-y-3 md:space-y-0 items-center md:justify-between mt-3 px-2 md:px-10">
                     <p className="text-[12px] mt-2 text-white/80">&copy; {date} IronCore Fitness. All right reserved.</p>
                     <div className="flex space-x-4">
                         <a href="" className="text-[12px] text-white/80 hover:text-[#55FFCB] transition-all">Privacy Policy</a>
