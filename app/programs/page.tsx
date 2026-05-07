@@ -89,7 +89,7 @@ export default function Programs(){
                                         <motion.img 
                                             {...scrollLeftEffects}
                                             src={program.image} alt={program.title} className="w-full lg:w-[35%] h-[250px] md:h-[400px] lg:h-auto rounded-xl object-cover" />
-                                        <div className="w-full lg:w-[60%] h-auto flex flex-col lg:px-5 mt-5">
+                                        <div className="w-full lg:w-[60%] h-auto flex flex-col lg:px-5 mt-5 lg:mt-0">
                                             <h3 className="text-[13px] text-white/70">
                                                 {program.text}
                                             </h3>
