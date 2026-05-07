@@ -32,7 +32,7 @@ export default function Navbar(){
                             </Link>
                         </li>
                         <li className={`font-medium hover:font-semibold px-3 py-1.5 text-[12.5px] cursor-pointer transition-all duration-200 text-white hover:text-[#55FFCB] hover:underline`}>
-                            <Link href="">
+                            <Link href="/programs">
                                 Programs
                             </Link>
                         </li>
@@ -79,7 +79,7 @@ export default function Navbar(){
                 <Link href="/about" className="px-2 py-2.5 rounded-lg cusor-pointer text-[12.5px] text-[#A1A1AA] hover:text-[#55FFCB]">
                     About
                 </Link>
-                <Link href="#" className="px-2 py-2.5 rounded-lg cusor-pointer text-[12.5px] text-[#A1A1AA] hover:text-[#55FFCB]">
+                <Link href="/programs" className="px-2 py-2.5 rounded-lg cusor-pointer text-[12.5px] text-[#A1A1AA] hover:text-[#55FFCB]">
                     Programs
                 </Link>
                 <Link href="#" className="px-2 py-2.5 rounded-lg cusor-pointer text-[12.5px] text-[#A1A1AA] hover:text-[#55FFCB]">
