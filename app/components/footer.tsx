@@ -57,12 +57,12 @@ export default function Footer(){
                                 </Link>
                             </li>
                             <li className="text-[12px] text-white/80 hover:text-white hover:font-medium transition-all duration-200">
-                                <Link href="#">
+                                <Link href="/membership">
                                     Membership
                                 </Link>
                             </li>
                             <li className="text-[12px] text-white/80 hover:text-white hover:font-medium transition-all duration-200">
-                                <Link href="#">
+                                <Link href="/trainers">
                                     Our Trainers
                                 </Link>
                             </li>

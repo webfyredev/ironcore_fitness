@@ -105,7 +105,7 @@ export default function About(){
                             variants={staggerEffects}
                             className="w-full border-1 border-[#55FFCB]/20 rounded-xl relative group overflow-hidden mb-3">
                             <img src={data.image} alt={data.title} className="w-full h-48 object-cover rounded-t-xl group-hover:scale-103 transition-all duration-300" />
-                            <div className="absolute top-0 w-full h-48 group-hover:h-49 rounded-t-xl inset-0 bg-[#0A0B0B]/40 group-hover:bg-[#0A0B0B]/30 transition-all"></div>
+                            <div className="absolute top-0 w-full h-48 group-hover:h-49 rounded-t-xl inset-0 bg-[#0A0B0B]/30 group-hover:bg-[#0A0B0B]/15 transition-all"></div>
                             <div className="flex flex-col w-full h-full bg-[#2A2A2A] p-5 rounded-b-xl">
                                 <h3 className="font-bold text-xl text-white group-hover:text-[#55FFCB]">{data.title}</h3>
                                 <p className="mt-3 text-[12px] text-white/80">

@@ -37,12 +37,12 @@ export default function Navbar(){
                             </Link>
                         </li>
                         <li className={`font-medium hover:font-semibold px-3 py-1.5 text-[12.5px] cursor-pointer transition-all duration-200 text-white hover:text-[#55FFCB] hover:underline`}>
-                            <Link href="">
+                            <Link href="/membership">
                                 Membership
                             </Link>
                         </li>
                         <li className={`font-medium hover:font-semibold px-3 py-1.5 text-[12.5px] cursor-pointer transition-all duration-200 text-white hover:text-[#55FFCB] hover:underline`}>
-                            <Link href="">
+                            <Link href="/trainers">
                                     Trainers
                             </Link>
                         </li>
@@ -52,7 +52,7 @@ export default function Navbar(){
                             </Link>
                         </li>
                         <li className={`font-medium hover:font-semibold px-3 py-1.5 text-[12.5px] cursor-pointer transition-all duration-200 text-white hover:text-[#55FFCB] hover:underline`}>
-                            <Link href="">
+                            <Link href="/contact">
                                     Contact
                             </Link>
                         </li>
@@ -82,16 +82,16 @@ export default function Navbar(){
                 <Link href="/programs" className="px-2 py-2.5 rounded-lg cusor-pointer text-[12.5px] text-[#A1A1AA] hover:text-[#55FFCB]">
                     Programs
                 </Link>
-                <Link href="#" className="px-2 py-2.5 rounded-lg cusor-pointer text-[12.5px] text-[#A1A1AA] hover:text-[#55FFCB]">
+                <Link href="/membership" className="px-2 py-2.5 rounded-lg cusor-pointer text-[12.5px] text-[#A1A1AA] hover:text-[#55FFCB]">
                     Membership 
                 </Link>
-                <Link href="#" className="px-2 py-2.5 rounded-lg cusor-pointer text-[12.5px] text-[#A1A1AA] hover:text-[#55FFCB]">
+                <Link href="/trainers" className="px-2 py-2.5 rounded-lg cusor-pointer text-[12.5px] text-[#A1A1AA] hover:text-[#55FFCB]">
                     Trainers
                 </Link>
                 <Link href="#" className="px-2 py-2.5 rounded-lg cusor-pointer text-[12.5px] text-[#A1A1AA] hover:text-[#55FFCB]">
                     Blog
                 </Link>
-                <Link href="#" className="px-2 py-2.5 rounded-lg cusor-pointer text-[12.5px] text-[#A1A1AA] hover:text-[#55FFCB]">
+                <Link href="/contact" className="px-2 py-2.5 rounded-lg cusor-pointer text-[12.5px] text-[#A1A1AA] hover:text-[#55FFCB]">
                     Contacts
                 </Link>
                 <button className="border-none flex items-center justify-center mt-5 py-3 text-[12.5px] font-semibold rounded-lg cursor-pointer bg-[#55FFCB] text-[#0A0B0B] transition-all hover:bg-transparent hover:text-[#55FFCB] hover:border-1 hover:border-[#55FFCB]/20">
