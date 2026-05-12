@@ -54,39 +54,58 @@ export const mem_price_plans = [
 
 export const mem_service = [
     {
-        icon : '',
+        icon : FaUsers,
         title : 'Extra PT Session',
         text : 'Add more one-on-one coaching',
         price : 45
     },
     {
-        icon : '',
+        icon : FaUsers,
         title : 'Nutrition Consultation',
         text : 'Personalized meal planning',
         price : 75
     },
     {
-        icon : '',
+        icon : FaUsers,
         title : 'Body Composition Scan',
         text : 'Track your progress accurately',
         price : 35
     },
     {
-        icon : '',
+        icon : FaUsers,
         title : 'Recovery Massage',
         text : 'Professional sports massage',
         price : 60   
     },
     {
-        icon : '',
+        icon : FaUsers,
         title : 'Small Group Training',
         text : 'Semi-private sessions (3-5 people)',
         price : 30
     },
     {
-        icon : '',
+        icon : FaUsers,
         title : 'Program Design',
         text : 'Custom 12-week training plan',
         price : 100
     }
 ];
+
+export const membership_faqs = [
+    {
+        title : 'Can I upgrade or downgrade my plan',
+        text : 'Yes! You can change your membership level at any time. Upgrades take effect immediately, while downgrades take effect at your next billing cycle'
+    },
+    {
+        title : 'What payment methods do you accept',
+        text : 'We accept all major credit cards, debit cards, and ACH bank transfers. Payments are processed automatically on your billing date.'
+    },
+    {
+        title : 'Do you offer student or millitary discounts',
+        text : 'Yes! We offer 20% off any membership for active students and millitary personnel. Just show valid ID when signing up.'
+    },
+    {
+        title : 'Can I try before I commit?',
+        text : 'Absolutely! We offer a 7-day trial pass so you can experience IronCore before joining. Contact us to schedule your trial.'
+    }
+]

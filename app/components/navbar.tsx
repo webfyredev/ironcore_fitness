@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react"
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 export default function Navbar(){
     const [Open, setOpen] = useState(false)
     const [scrolled, setScrolled] = useState(false);
@@ -13,6 +14,7 @@ export default function Navbar(){
 
         return () => window.removeEventListener("scroll", handleScroll)
     }, []);
+    const pathname = usePathname();
     return(
         <>
             <nav className={`w-full fixed top-0 left-0 z-50 transition-all duration-300 font-medium text-white ${scrolled ? "bg-[#0A0B0B] " : "bg-transparent"}`}>
@@ -47,7 +49,7 @@ export default function Navbar(){
                             </Link>
                         </li>
                         <li className={`font-medium hover:font-semibold px-3 py-1.5 text-[12.5px] cursor-pointer transition-all duration-200 text-white hover:text-[#55FFCB] hover:underline`}>
-                            <Link href="">
+                            <Link href="/blog">
                                     Blog
                             </Link>
                         </li>
@@ -88,7 +90,7 @@ export default function Navbar(){
                 <Link href="/trainers" className="px-2 py-2.5 rounded-lg cusor-pointer text-[12.5px] text-[#A1A1AA] hover:text-[#55FFCB]">
                     Trainers
                 </Link>
-                <Link href="#" className="px-2 py-2.5 rounded-lg cusor-pointer text-[12.5px] text-[#A1A1AA] hover:text-[#55FFCB]">
+                <Link href="/blog" className="px-2 py-2.5 rounded-lg cusor-pointer text-[12.5px] text-[#A1A1AA] hover:text-[#55FFCB]">
                     Blog
                 </Link>
                 <Link href="/contact" className="px-2 py-2.5 rounded-lg cusor-pointer text-[12.5px] text-[#A1A1AA] hover:text-[#55FFCB]">

@@ -39,8 +39,8 @@ export default function Footer(){
                         <h3 className=" font-semibold text-[#55FFCB]">Stay Updated</h3>
                         <p className="text-[12px] mt-2 text-white/80">Get fitness tips and exclusive offers</p>
                         <form action="" className="w-full py-2.5">
-                            <input type="email" placeholder="Your email" className="text-white/80 bg-[#2A2A2A] w-full h-8 text-[12px] px-3 rounded-md border-1 border-[#55FFCB]/20"  />
-                            <motion.button {...buttonHoverEffects} className="w-full h-9 mt-2 rounded-md font-semibold cursor-pointer bg-[#55FFCB] text-[12px] text-[#0A0A0A]">Subscribe</motion.button>
+                            <input type="email" placeholder="Your email" className="text-white/80 bg-[#2A2A2A] w-full h-10 lg:h-8 text-[12px] px-3 rounded-md border-1 border-[#55FFCB]/20"  />
+                            <motion.button {...buttonHoverEffects} className="w-full h-10 lg:h-9 mt-3 lg:mt-2 rounded-md font-semibold cursor-pointer bg-[#55FFCB] text-[12px] text-[#0A0A0A]">Subscribe</motion.button>
                         </form>
                     </div>
                     <div className="p-5 flex flex-col">
@@ -67,13 +67,13 @@ export default function Footer(){
                                 </Link>
                             </li>
                             <li className="text-[12px] text-white/80 hover:text-white hover:font-medium transition-all duration-200">
-                                <Link href="#">
+                                <Link href="/blog">
                                     Blog
                                 </Link>
                             </li>
                             <li className="text-[12px] text-white/80 hover:text-white hover:font-medium transition-all duration-200">
-                                <Link href="#">
-                                    FAQ
+                                <Link href="/contact">
+                                    Contacts
                                 </Link>
                             </li>
                         </ul>
