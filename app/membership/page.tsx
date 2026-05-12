@@ -15,6 +15,7 @@ export default function Membership(){
         <>
             <Navbar />
             <Header 
+            image="/header/membership.jpg"
             title="MEMBERSHIP PLANS"
             text="Choose the plan that fits your goals. No long term commitments. Cancel anytime. All plan include our 7-day money back guarantee."/>
             <div className="w-full p-3 lg:p-10 flex flex-col items-center bg-[#0A0B0B]">

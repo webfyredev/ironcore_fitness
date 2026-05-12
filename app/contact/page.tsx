@@ -7,6 +7,7 @@ export default function Contacts(){
         <>
             <Navbar />
             <Header
+            image="/header/contact.jpg"
             title="GET IN TOUCH"
             text="Have qeustions? We're here to help. Reach out and let's start your fitness journey" />
             <div className="w-full px-15 py-10 border-1 border-red-500 bg-[#242424] flex space-x-5">

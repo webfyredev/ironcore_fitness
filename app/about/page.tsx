@@ -13,6 +13,7 @@ export default function About(){
         <>
             <Navbar />
             <Header 
+                image="/header/about.jpg"
                 title = "ABOUT IRONCORE FITNESS"
                 text="More than a gym, we're community dedicated to transforming lives through fitness, discipline, and unwavering support "
             />

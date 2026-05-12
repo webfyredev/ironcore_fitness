@@ -2,14 +2,15 @@
 
 interface HeaderProps {
     title : string,
-    text : string
+    text : string,
+    image : string
 }
-export default function Header({title, text} : HeaderProps){
+export default function Header({title, text, image} : HeaderProps){
     return (
         <>
-            <div className="w-full relative h-80 bg-red-500 relative">
-                <img src="/head2.jpg" alt="header image" className="w-full h-full object-cover" />
-                <div className="absolute top-0 left-0 inset-0 bg-[#0A0B0B]/70 flex flex-col items-center justify-center">
+            <div className="w-full relative h-100 relative">
+                <img src={image} alt="header image" className="w-full h-full object-cover" />
+                <div className="-full h-full absolute top-0 left-0 inset-0 bg-[#0A0B0B]/70 flex flex-col items-center justify-center">
                     <h3 className=" mt-5 text-3xl md:text-4xl lg:text-5xl font-bold heading text-white ">
                         {title}
                     </h3>

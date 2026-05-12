@@ -23,6 +23,7 @@ export default function Programs(){
         <>
             <Navbar />
             <Header 
+            image="/header/programs.jpg"
             title = "OUR PROGRAMS"
             text="Choose the program that matches your goals and start your transformation today. Every program is designed by certified experts and proven to deliver results."/>
             <div className="w-full p-3 lg:p-10 flex flex-col items-center bg-[#0A0B0B]">
@@ -70,10 +71,10 @@ export default function Programs(){
                     {programs_det.map((program) => {
                         const isOpen = openId === program.id;   
                         return(
-                            <div key={program.id} className="w-full border-1 border-[#55FFCB]/20 rounded-xl overflow-hidden flex flex-col space-y-5">
+                            <div key={program.id} className="w-full border-1 border-[#55FFCB]/20 rounded-xl overflow-hidden flex flex-col space-y-5 group">
                                 <div 
                                     onClick={() => toggleProgram(program.id)}
-                                    className="w-full border-b-1 border-[#55FFCB]/20 cursor-pointer rounded-t-xl flex px-2 md:px-5 py-3 items-center justify-between group">
+                                    className="w-full border-b-1 border-[#55FFCB]/20 cursor-pointer rounded-t-xl flex px-2 md:px-5 py-3 items-center justify-between">
                                     <div className="flex space-x-3 items-center px-3">
                                         <span className="w-10 h-10 rounded-full flex items-center justify-center text-[#55FFCB] bg-[#33554B]">{program.id}</span>
                                         <h3 className="font-bold text-white heading group-hover:text-[#55FFCB] transition-all duration-300">{program.title}</h3>
