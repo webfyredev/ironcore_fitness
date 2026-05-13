@@ -18,7 +18,7 @@ export default function Membership(){
             image="/header/membership.jpg"
             title="MEMBERSHIP PLANS"
             text="Choose the plan that fits your goals. No long term commitments. Cancel anytime. All plan include our 7-day money back guarantee."/>
-            <div className="w-full p-3 lg:p-10 flex flex-col items-center bg-[#0A0B0B]">
+            <div className="w-full p-4 lg:p-10 flex flex-col items-center bg-[#0A0B0B]">
                 <motion.h3 
                 {...scrollUpEffects}
                 className="text-3xl heading leading-tight text-center font-bold mt-10 lg:mt-3  text-white">
@@ -49,7 +49,7 @@ export default function Membership(){
                     ))}
                 </motion.div>
             </div>
-            <div className="w-full p-10 flex flex-col items-center bg-[#242424]">
+            <div className="w-full p-4 lg:p-10 flex flex-col items-center bg-[#242424] overflow-hidden">
                <motion.h3 
                 {...scrollUpEffects}
                 className="text-3xl heading leading-tight text-center font-bold mt-10 lg:mt-3  text-white">
@@ -99,10 +99,10 @@ export default function Membership(){
                     )
                     })}
                 </div>
-                <p className="mt-8 text-white/70 text-[11px]">All plans include a 7-day money back guarantee - No long term contracts - Cancel anytime</p> 
+                <p className="mt-8 text-white/70 text-[11px] text-center">All plans include a 7-day money back guarantee - No long term contracts - Cancel anytime</p> 
                 <a href="#" className="flex items-center font-semibold mt-4 text-[#55FFCB] text-[12px]">Have questions? Talk to our team <FaArrowRight  className="mt-0.5 ml-1"/></a> 
             </div>
-            <div className="w-full p-3 lg:p-10 flex flex-col items-center bg-[#0A0B0B]">
+            <div className="w-full p-4 lg:p-10 flex flex-col items-center bg-[#0A0B0B] overflow-hidden">
                 <motion.h3 
                 {...scrollUpEffects}
                 className="text-3xl heading leading-tight text-center font-bold mt-10 lg:mt-3  text-white">
@@ -113,11 +113,11 @@ export default function Membership(){
                     className="w-[92%] md:w-[65%] lg:w-[50%] text-center text-[13px] text-white/80 mt-5">
                         Add extra services to maximize your results
                 </motion.p>
-                <div className="w-[85%] p-5 mt-5 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div className="w-full lg:w-[85%] p-5 mt-5 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {mem_service.map((service, index) => (
                         <motion.div 
                             {...scrollRightEffects}
-                            key={index} className="w-full flex flex-col p-5 bg-[#2A2A2A] border-1 border-[#55FFCB]/20 hover:border-[#55FFCB]/40 rounded-xl group">
+                            key={index} className="w-full mb-2 lg:mb-0 flex flex-col p-5 bg-[#2A2A2A] border-1 border-[#55FFCB]/20 hover:border-[#55FFCB]/40 rounded-xl group">
                             <span className="w-11 h-11 flex items-center justify-center bg-[#33554B] text-[#55FFCB] rounded-full">
                                 <service.icon />
                             </span>
@@ -128,7 +128,7 @@ export default function Membership(){
                     ))}
                 </div>
             </div>
-            <div className="w-full p-10 flex flex-col items-center bg-[#242424]">
+            <div className="w-full p-4 lg:p-10 flex flex-col items-center bg-[#242424]">
                <motion.h3 
                 {...scrollUpEffects}
                 className="text-3xl heading leading-tight text-center font-bold mt-10 lg:mt-3  text-white">
@@ -139,11 +139,11 @@ export default function Membership(){
                     className="w-[92%] md:w-[65%] lg:w-[50%] text-center text-[13px] text-white/80 mt-5">
                         Quick answers to common membership questions
                 </motion.p>
-                <div className="w-[80%] p-5 mt-5 space-y-5">
+                <div className="w-full lg:w-[80%] p-3 lg:p-5 mt-5 space-y-5">
                     {membership_faqs.map((faqs) => (
                         <motion.div 
                             {...scrollUpDelayEffects}
-                            className="w-full p-5 border-1 border-[#55FFCB]/20 rounded-xl bg-[#2A2A2A]">
+                            className="w-full p-5 border-1 border-[#55FFCB]/20 hover:border-[#55FFCB]/40 rounded-xl bg-[#2A2A2A] transition-all">
                             <h3 className="text-white font-semibold text-[14px]">{faqs.title}</h3>
                             <p className="text-white/60 text-[13px] mt-2">{faqs.text}</p>
                         </motion.div>
@@ -151,7 +151,7 @@ export default function Membership(){
                 </div>
                 <Link href="#" className="flex items-center font-semibold mt-4 text-[#55FFCB] text-[12px]">View all FAQS <FaArrowRight  className="mt-0.5 ml-1"/></Link> 
             </div>
-            <div className="w-full p-3 lg:p-10 flex flex-col items-center">
+            <div className="w-full p-3 lg:p-10 flex flex-col items-center overflow-hidden">
                 <motion.h3 
                     {...scrollUpEffects}
                     className="mt-10 heading font-bold text-white text-2xl md:text-3xl text-center">READY TO TRANSFORM YOUR LIFE?</motion.h3>
@@ -170,7 +170,7 @@ export default function Membership(){
                     </motion.button>
                     <motion.button 
                     {...buttonHoverEffects}
-                    className="cursor-pointer px-10 md:px-6 py-3 bg-transparent text-white rounded-full font-bold text-[12px] border-2 border-[#55FFCB]">
+                    className="hidden md:flex cursor-pointer px-10 md:px-6 py-3 bg-transparent text-white rounded-full font-bold text-[12px] border-2 border-[#55FFCB]">
                         View Programs
                     </motion.button>
                 </motion.div>

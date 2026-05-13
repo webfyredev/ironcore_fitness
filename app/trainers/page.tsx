@@ -1,7 +1,7 @@
 "use client";
 
 import { FaAward, FaMedal, FaStar } from "react-icons/fa";
-import { buttonHoverEffects, scrollRightEffects, scrollUpDelayEffects, scrollUpEffects, staggerContainer, staggerEffects } from "../animations/animate";
+import { buttonHoverEffects, scrollLeftEffects, scrollRightEffects, scrollUpDelayEffects, scrollUpEffects, staggerContainer, staggerEffects } from "../animations/animate";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import Navbar from "../components/navbar";
@@ -32,7 +32,7 @@ export default function Trainers(){
                     </div>
                 ))}
             </div>
-            <div className="w-full p-3 lg:p-10 flex flex-col items-center bg-[#242424]">
+            <div className="w-full p-4 lg:p-10 flex flex-col items-center bg-[#242424]">
                 <motion.h3 
                     {...scrollUpEffects}
                     className="font-bold text-white heading text-2xl mt-10 lg:mt-5 text-center">WORLD-CLASS EXPERTISE, PERSONALIZED ATTENTION</motion.h3>
@@ -43,7 +43,7 @@ export default function Trainers(){
                     {...scrollUpDelayEffects}
                     className="w-full md:w-[85%] lg:w-[55%] text-[14px] text-white/70 mb-5 lg:mb-0 mt-5 text-center">But credentials are just the beginning. What truly sets our trainers apart is their genuine passion for helping people transform their lives. They dont just coach they inspire, motivate and support you every step of the way.</motion.p>
             </div>
-            <div className="w-full p-3 lg:p-10 flex flex-col items-center bg-[#0A0B0B]">
+            <div className="w-full p-4 lg:p-10 flex flex-col items-center bg-[#0A0B0B] overflow-hidden">
                 <motion.h3 
                 {...scrollUpEffects}
                 className="text-3xl heading leading-tight text-center font-bold mt-10 lg:mt-3  text-white">
@@ -56,7 +56,9 @@ export default function Trainers(){
                 </motion.p>
                 <div className="w-full mt-5 p-3 lg:p-5 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                     {coaching_team.map((team, index) => (
-                        <div className="w-full border-1 border-[#55FFCB]/20 hover:border-[#55FFCB]/40 rounded-xl flex flex-col relative group overflow-hidden mb-5 transition-all ">
+                        <motion.div 
+                            {...scrollRightEffects}
+                            className="w-full border-1 border-[#55FFCB]/20 hover:border-[#55FFCB]/40 rounded-xl flex flex-col relative group overflow-hidden mb-5 transition-all ">
                             <img src={team.image} alt={team.name} className="w-full aspect-[3/4] object-cover object-top rounded-t-xl group-hover:scale-105 transition-all duration-300" />
                             <span className="absolute w-full top-0 h-aspect-[3/4] inset-0 bg-[#0A0B0B]/20 group-hover:bg-[#0A0B0B]/5 transition-all duration-300 rounded-t-xl group-hover:h-aspect-[4/4]">
                                 <p className="absolute right-5 top-2 bg-[#55FFCB] text-[#0A0B0B] text-[10px] px-3 py-1 rounded-full font-semibold ">{team.years} years</p>
@@ -90,11 +92,11 @@ export default function Trainers(){
                                     Book a Session
                                 </button>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>
-            <div className="w-full p-3 lg:p-10 flex flex-col items-center bg-[#242424]">
+            <div className="w-full p-4 lg:p-10 flex flex-col items-center bg-[#242424] overflow-hidden">
                 <motion.h3 
                 {...scrollUpEffects}
                 className="text-2xl md:text-3xl heading leading-tight text-center font-bold mt-10 lg:mt-3  text-white">
@@ -108,8 +110,8 @@ export default function Trainers(){
                 <div className="w-full lg:w-[85%] mt-5 p-3 lg:p-5 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-5">
                     {trainer_value.map((trainer, index) => (
                         <motion.div 
-                            {...scrollUpEffects}
-                            className="p-5 border-1 border-[#55FFCB]/20 hover:border-[#55FFCB]/40 rounded-xl flex flex-row space-x-5 bg-[#2A2A2A] mb-3 transition-all hover:bg-[#242424] duration-300">
+                            {...scrollLeftEffects}
+                            className="p-5 border-1 border-[#55FFCB]/20 hover:border-[#55FFCB]/40 rounded-xl flex flex-row space-x-5 bg-[#2A2A2A] mb-3 transition-all hover:bg-[#242424]">
                             <span className="w-11 h-10.5 flex items-center justify-center bg-[#33554B] text-[#55FFCB] rounded-full">
                                 <trainer.icon />
                             </span>
@@ -179,7 +181,7 @@ export default function Trainers(){
                     </motion.button>
                     <motion.button 
                         {...buttonHoverEffects}
-                        className="cursor-pointer px-6 py-3 bg-transparent text-white rounded-full font-bold text-[12px] border-2 border-[#55FFCB]">
+                        className="hidden md:flex cursor-pointer px-6 py-3 bg-transparent text-white rounded-full font-bold text-[12px] border-2 border-[#55FFCB]">
                             View Membership Plans
                     </motion.button>
                 </motion.div>

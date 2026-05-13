@@ -17,7 +17,7 @@ export default function Navbar(){
     const pathname = usePathname();
     return(
         <>
-            <nav className={`w-full fixed top-0 left-0 z-50 transition-all duration-300 font-medium text-white ${scrolled ? "bg-[#0A0B0B] " : "bg-transparent"}`}>
+            <nav className={`w-full fixed top-0 left-0 z-50 transition-all duration-300 font-medium text-white overflow-hidden ${scrolled ? "bg-[#0A0B0B] " : "bg-transparent"}`}>
                 <div className="w-full px-5 lg:px-15 py-2 flex items-center justify-between cursor-pointer ">
                     <Link href="/">
                         <Image src="/logo.png" alt="ironcore_logo" width={55} height={55} />

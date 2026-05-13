@@ -32,7 +32,7 @@ export default function About(){
                     </div>
                 ))}
             </div>
-            <div className="w-full p-3 lg:p-10 lg:flex lg:flex-row flex flex-col  lg:space-x-10 bg-[#2A2A2A]">
+            <div className="w-full p-5 lg:p-10 lg:flex lg:flex-row flex flex-col  lg:space-x-10 bg-[#2A2A2A] overflow-hidden">
                 <div className="w-full lg:w-1/2 p-2 lg:p-5 flex flex-col">
                     <motion.h3 
                         {...scrollUpEffects}
@@ -72,8 +72,8 @@ export default function About(){
                         {...scrollRightEffects}
                         src="/about/intro.jpg" alt="intro_image" className="w-full lg:w-[85%] h-auto md:h-[350px]  lg:h-[75%] object-cover rounded-xl" />
                     <motion.div 
-                        {...secFadeInEffects}
-                        className="absolute bottom-7 left-[-10px] p-5 border-2 bg-[#2A2A2A] border-[#55FFCB] rounded-xl hidden lg:flex flex-col">
+                        {...scrollUpDelayEffects}
+                        className="absolute bottom-7 left-[-10px] py-4 px-7 border-2 bg-[#2A2A2A] border-[#55FFCB] rounded-xl hidden lg:flex flex-col">
                         <h3 className="text-xl font-bold heading text-[#55FFCB]">
                             11 YEARS
                         </h3>
@@ -83,7 +83,7 @@ export default function About(){
                     </motion.div>
                 </div>
             </div>
-            <div className="w-full p-3 lg:p-15 flex flex-col items-center bg-[#0A0B0B]">
+            <div className="w-full p-4 lg:p-15 flex flex-col items-center bg-[#0A0B0B] overflow-hidden">
                 <motion.p 
                     {...secFadeInEffects}
                     className="text-[12px] font-bold text-[#55FFCB] mt-10 lg:mt-0">OUR FACILITY</motion.p>
@@ -95,15 +95,12 @@ export default function About(){
                     className="w-[90%] md:w-[65%] lg:w-[50%] text-center text-[13px] text-white/80 mt-5">
                         Train in a 15,000 sq ft facility designed for serious results. From cutting-edge equipment to luxurios amenities, every detail is crafted to enhance your training experience.
                 </motion.p>
-                <motion.div 
-                    variants={staggerContainer}
-                    initial="hidden"
-                    whileInView="show"
-                    viewport={{ once: false }}
+                <div 
+                    
                     className="w-full p-3 lg:p-5 mt-5 grid grid-cols-1 md:grid-cols-2 gap-5">
                     {facilities.map((data, index) => (
                         <motion.div 
-                            variants={staggerEffects}
+                            {...scrollRightEffects}
                             className="w-full border-1 border-[#55FFCB]/20 rounded-xl relative group overflow-hidden mb-3">
                             <img src={data.image} alt={data.title} className="w-full h-48 object-cover rounded-t-xl group-hover:scale-103 transition-all duration-300" />
                             <div className="absolute top-0 w-full h-48 group-hover:h-49 rounded-t-xl inset-0 bg-[#0A0B0B]/30 group-hover:bg-[#0A0B0B]/15 transition-all"></div>
@@ -120,9 +117,9 @@ export default function About(){
                             </div>
                         </motion.div>
                     ))}
-                </motion.div>
+                </div>
             </div>
-            <div className="w-full p-3 lg:p-10 flex flex-col items-center bg-[#242424]">
+            <div className="w-full p-4 lg:p-10 flex flex-col items-center bg-[#242424] overflow-hidden">
                 <motion.h3 
                 {...scrollUpEffects}
                 className="text-3xl md:text-4xl heading leading-tight text-center font-bold mt-10 lg:mt-3  text-white">
@@ -155,7 +152,7 @@ export default function About(){
                 </motion.div>
 
             </div>
-            <div className="w-full p-3 lg:p-10 bg-[#0A0B0B] flex flex-col items-center ">
+            <div className="w-full p-4 lg:p-10 bg-[#0A0B0B] flex flex-col items-center overflow-hidden">
                 <motion.h3 
                     {...scrollUpEffects}
                     className="text-3xl md:text-4xl heading leading-tight text-center font-bold mt-10 lg:mt-3 text-white">
@@ -188,7 +185,7 @@ export default function About(){
                 {/* <span className="my-5 w-full  border-1 border-[#55FFCB]/10"></span> */}
 
             </div>
-            <div className="w-full p-3 lg:p-10 mt-15 bg-[#0A0B0B] lg:flex flex flex-col lg:flex-row lg:space-x-5">
+            <div className="w-full p-4 lg:p-10 mt-15 bg-[#0A0B0B] lg:flex flex flex-col lg:flex-row lg:space-x-5 overflow-hidden">
                 <div className="w-full lg:w-1/2 flex flex-col p-5">
                     <motion.h3 
                         {...scrollUpEffects}
@@ -261,7 +258,7 @@ export default function About(){
                     </div>
                 </motion.div>
             </div>
-            <div className="w-full py-8 px-5 lg:p-15 bg-[#242424] flex flex-col items-center justify-center">
+            <div className="w-full py-8 px-5 lg:p-15 bg-[#242424] flex flex-col items-center justify-center overflow-hidden">
                 <motion.h3 
                     {...scrollUpEffects}
                     className="text-3xl md:text-4xl font-bold heading text-white mt-5 ">MEET OUR EXPERT TEAM</motion.h3>

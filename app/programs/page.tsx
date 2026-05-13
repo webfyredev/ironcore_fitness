@@ -1,6 +1,6 @@
 "use client";
 
-import { buttonHoverEffects, scrollLeftEffects, scrollRightEffects, scrollUpDelayEffects, scrollUpEffects, staggerContainer, staggerEffects } from "../animations/animate";
+import { buttonHoverEffects, scrollLeftEffects, scrollRightEffects, scrollUpDelayEffects, scrollUpEffects, secFadeInEffects, staggerContainer, staggerEffects } from "../animations/animate";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import Navbar from "../components/navbar";
@@ -26,7 +26,7 @@ export default function Programs(){
             image="/header/programs.jpg"
             title = "OUR PROGRAMS"
             text="Choose the program that matches your goals and start your transformation today. Every program is designed by certified experts and proven to deliver results."/>
-            <div className="w-full p-3 lg:p-10 flex flex-col items-center bg-[#0A0B0B]">
+            <div className="w-full p-4 lg:p-10 flex flex-col items-center bg-[#0A0B0B]">
                 <motion.h3 
                 {...scrollUpEffects}
                 className="text-3xl heading leading-tight text-center font-bold mt-10 lg:mt-3  text-white">
@@ -46,7 +46,7 @@ export default function Programs(){
                     {prog_intro.map((data) => (
                         <motion.div 
                             variants={staggerEffects}
-                            className="px-5 py-8 lg:py-5 flex flex-col items-center w-full border-1 border-[#55FFCB]/20 bg-[#242424] rounded-xl space-y-3 mb-3 lg:mb-0">
+                            className="px-5 py-8 lg:py-5 flex flex-col items-center w-full border-1 border-[#55FFCB]/20 hover:border-[#55FFCB]/40 transition-all duration-300 bg-[#242424] rounded-xl space-y-3 mb-3 lg:mb-0">
                             <span className="w-11 h-11 flex items-center justify-center bg-[#33554B] text-[#55FFCB] rounded-full">
                                 <data.icon />
                             </span>
@@ -56,7 +56,7 @@ export default function Programs(){
                     ))}
                 </motion.div>
             </div>
-            <div className="w-full flex flex-col items-center p-3 lg:p-10 bg-[#242424]">
+            <div className="w-full flex flex-col items-center p-5 lg:p-10 bg-[#242424]">
                 <motion.h3 
                     {...scrollUpEffects}
                     className="text-3xl heading leading-tight text-center font-bold mt-10 lg:mt-3  text-white">
@@ -71,7 +71,7 @@ export default function Programs(){
                     {programs_det.map((program) => {
                         const isOpen = openId === program.id;   
                         return(
-                            <div key={program.id} className="w-full border-1 border-[#55FFCB]/20 rounded-xl overflow-hidden flex flex-col space-y-5 group">
+                            <div key={program.id} className="w-full border-1 border-[#55FFCB]/20 hover:border-[#55FFCB]/50 transition-all duration-300 rounded-xl overflow-hidden flex flex-col space-y-5 group">
                                 <div 
                                     onClick={() => toggleProgram(program.id)}
                                     className="w-full border-b-1 border-[#55FFCB]/20 cursor-pointer rounded-t-xl flex px-2 md:px-5 py-3 items-center justify-between">
@@ -138,7 +138,7 @@ export default function Programs(){
                     })}
                 </div>
             </div>
-            <div className="w-full p-3 lg:p-10 flex flex-col items-center bg-[#0A0B0B]">
+            <div className="w-full p-4 lg:p-10 flex flex-col items-center bg-[#0A0B0B] overflow-hidden">
                 <motion.h3 
                 {...scrollUpEffects}
                 className="text-3xl heading leading-tight text-center font-bold mt-10 lg:mt-3  text-white">
@@ -150,7 +150,9 @@ export default function Programs(){
                         Compare features to find the perfect programs for your goals.
                 </motion.p>
                 <div className="w-full lg:w-[85%] p-3 md:p-5 mt-5 flex items-center justify-center">
-                    <div className="w-full border-1 border-[#55FFCB]/20 overflow-hidden rounded-xl">
+                    <motion.div 
+                        {...secFadeInEffects}
+                        className="w-full border-1 border-[#55FFCB]/20 overflow-hidden rounded-xl">
                         <div className="w-full py-3.5 px-3 md:px-6 grid grid-cols-4 bg-[#35574D] text-white text-[11px] md:text-sm font-bold rounded-t-xl">
                             <span>Feature</span>
                             <span>Personal Training</span>
@@ -180,10 +182,10 @@ export default function Programs(){
                                 </span>
                             </div>
                         ))}
-                    </div>
+                    </motion.div>
                 </div>  
             </div>
-            <div className="w-full p-3 lg:p-10 flex flex-col items-center bg-[#242424]">
+            <div className="w-full p-3 lg:p-10 flex flex-col items-center bg-[#242424] overflow-hidden">
                 <motion.h3 
                 {...scrollUpEffects}
                 className="text-3xl heading leading-tight text-center font-bold mt-10 lg:mt-3  text-white">
@@ -207,7 +209,7 @@ export default function Programs(){
                     ))}
                 </div>
             </div>
-            <div className="w-full p-3 lg:p-10 flex flex-col items-center">
+            <div className="w-full p-3 lg:p-10 flex flex-col items-center overflow-hidden">
                 <motion.h3 
                     {...scrollUpEffects}
                     className="mt-10 heading font-bold text-white text-2xl md:text-3xl text-center">NOT SURE WHICH PROGRAM IS RIGHT FOR YOU?</motion.h3>
@@ -218,7 +220,7 @@ export default function Programs(){
                 </motion.p>
                 <motion.div 
                     {...scrollRightEffects}
-                    className="w-auto md:flex md:flex-row flex flex-col md:space-x-5 space-y-5 md:space-y-0 items-center mt-5">
+                    className="w-auto md:flex md:flex-row flex flex-col md:space-x-5 space-y-5 md:space-y-0 items-center mt-8 md:mt-5">
                     <motion.button 
                     {...buttonHoverEffects}
                     className="cursor-pointer px-10 md:px-6 py-3 bg-[#55FFCB] text-[#0A0A0A] rounded-full font-bold text-[12px] hover:shadow-[0_0_30px_rgba(85,255,203,0.2)]">
@@ -226,7 +228,7 @@ export default function Programs(){
                     </motion.button>
                     <motion.button 
                     {...buttonHoverEffects}
-                    className="cursor-pointer px-10 md:px-6 py-3 bg-transparent text-white rounded-full font-bold text-[12px] border-2 border-[#55FFCB]">
+                    className="cursor-pointer  px-10 md:px-6 py-3 bg-transparent text-white rounded-full font-bold text-[12px] border-2 border-[#55FFCB]">
                         View Membership Plans
                     </motion.button>
                 </motion.div>

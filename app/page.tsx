@@ -84,7 +84,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div className="w-full relative h-[100vh] flex items-center justify-center">
+      <div className="w-full relative h-[100vh] flex items-center justify-center overflow-hidden">
           <img src="/hero2.jpg" alt="" className="w-full h-full object-cover" />
           <div className="w-full h-full absolute inset-0 bg-black/70 top-0 left-0 flex flex-col items-center justify-center">
             <motion.div 
@@ -136,7 +136,7 @@ export default function Home() {
             </motion.div>
           </div>
       </div>
-      <div className="w-full px-3 lg:px-10 py-10 lg:py-20 bg-[#242424] lg:flex lg:flex-row flex flex-col lg:space-x-10">
+      <div className="w-full px-5 lg:px-10 py-10 lg:py-20 bg-[#242424] lg:flex lg:flex-row flex flex-col lg:space-x-10 overflow-hidden">
           <div className="w-full lg:w-1/2 p-2 lg:p-5 flex items-center justify-center mt-5 relative overflow-hidden">
               <motion.img 
                 {...scrollLeftEffects}
@@ -215,7 +215,7 @@ export default function Home() {
               </div>
           </div>
       </div>
-      <div className="w-full p-3 lg:p-15 flex flex-col items-center bg-[#0A0B0B]">
+      <div className="w-full p-5 lg:p-15 flex flex-col items-center bg-[#0A0B0B] overflow-hidden">
           <motion.p 
             {...secFadeInEffects}
             className="text-[12px] font-bold text-[#55FFCB] mt-10 lg:mt-0">OUR PROGRAMS</motion.p>
@@ -281,7 +281,7 @@ export default function Home() {
             </motion.button>
           </motion.div>
       </div>
-      <div className="w-full p-3 lg:p-15 flex flex-col items-center bg-[#242424]">
+      <div className="w-full p-5 lg:p-15 flex flex-col items-center bg-[#242424] overflow-hidden">
           <motion.p 
             {...fadeInEffects}
             className="text-[12px] font-bold text-[#55FFCB] mt-10 lg:mt-0">MEMEBERSHIP PLANS</motion.p>
@@ -373,7 +373,7 @@ export default function Home() {
 
           </motion.div>
       </div>
-      <div className="w-full p-3 lg:p-15 flex flex-col items-center bg-[#0A0B0B]">
+      <div className="w-full p-5 lg:p-15 flex flex-col items-center bg-[#0A0B0B] overflow-hidden">
           <motion.p 
             {...ParagraphscaleInEffects}
             className="text-[12px] font-bold text-[#55FFCB] mt-10 lg:mt-0">OUR EXPERT TEAM
@@ -406,7 +406,7 @@ export default function Home() {
                     <p className="text-[11px] mt-1 text-white font-medium">{data.speciality}</p>
                     <div className="w-auto grid  mt-3 md:grid-cols-2 gap-2">
                       {data.skill.map((data, index) => (
-                        <p key={index} className="border-1 bg-[#2E5046] mb-1 lg:mb-0 border-[#55FFCB]/20 px-5 text-[#55FFCB] text-[10px] py-1.5 lg:py-1 text-center font-semibold rounded-full">{data}</p>
+                        <p key={index} className="border-1 bg-[#2E5046] mb-1 lg:mb-0 border-[#55FFCB]/20 px-5 text-[#55FFCB] text-[10px] py-2 lg:py-1 text-center font-semibold rounded-full">{data}</p>
                       ))}
                     </div>
                     <Link href="#" className="mt-8 text-[11px] font-semibold items-center flex text-[#55FFCB]">
@@ -450,7 +450,7 @@ export default function Home() {
             </motion.button>
           </div>
       </div>
-      <div className="w-full p-3 lg:p-15 flex flex-col items-center bg-[#242424]">
+      <div className="w-full p-5 lg:p-15 flex flex-col items-center bg-[#242424] overflow-hidden">
           <motion.p 
             {...ParagraphscaleInEffects}
             className="text-[12px] font-bold text-[#55FFCB] mt-10 lg:mt-0">SUCCESS STORIES</motion.p>
