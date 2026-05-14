@@ -70,7 +70,7 @@ export default function About(){
                 <div className="w-full lg:w-1/2 p-2 lg:p-5 flex items-center justify-center relative mt-5 lg:mt-0">
                     <motion.img 
                         {...scrollRightEffects}
-                        src="/about/intro.jpg" alt="intro_image" className="w-full lg:w-[85%] h-auto md:h-[350px]  lg:h-[75%] object-cover rounded-xl" />
+                        src="/about/intro1.jpg" alt="intro_image" className="w-full lg:w-[85%] h-auto md:h-[350px]  lg:h-[75%] object-cover rounded-xl" />
                     <motion.div 
                         {...scrollUpDelayEffects}
                         className="absolute bottom-7 left-[-10px] py-4 px-7 border-2 bg-[#2A2A2A] border-[#55FFCB] rounded-xl hidden lg:flex flex-col">

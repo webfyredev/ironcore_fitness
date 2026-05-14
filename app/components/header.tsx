@@ -21,7 +21,7 @@ export default function Header({title, text, image} : HeaderProps){
                     </motion.h3>
                     <motion.p 
                         {...scrollUpDelayEffects}
-                        className="w-[85%] md:w-[75%] lg:w-[55%] text-center mt-5 text-sm md:text-base text-white/80">
+                        className="hidden md:flex w-[85%] md:w-[75%] lg:w-[55%] text-center mt-5 text-sm md:text-base text-white/80">
                         {text}
                     </motion.p>
                 </div>

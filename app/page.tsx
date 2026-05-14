@@ -85,7 +85,7 @@ export default function Home() {
     <>
       <Navbar />
       <div className="w-full relative h-[100vh] flex items-center justify-center overflow-hidden">
-          <img src="/hero2.jpg" alt="" className="w-full h-full object-cover" />
+          <img src="/alt3.jpg" alt="" className="w-full h-full object-cover" />
           <div className="w-full h-full absolute inset-0 bg-black/70 top-0 left-0 flex flex-col items-center justify-center">
             <motion.div 
               {...scrollDownEffects}
